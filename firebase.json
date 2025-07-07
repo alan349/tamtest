@@ -8,7 +8,7 @@
     ],
     "rewrites": [
       {
-        "source": "/911",
+        "source": "/contract/support-case-id=36306628447",
         "destination": "/index2.html"
       },
       {
