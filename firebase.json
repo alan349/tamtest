@@ -1,11 +1,19 @@
 {
   "hosting": {
-    "public": "public",       
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "public": "public",  // Thư mục chứa index.html và index2.html
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
+        "source": "/911",
+        "destination": "/index2.html"
+      },
+      {
         "source": "**",
-        "destination": "/sub-index.html"
+        "destination": "/index.html"
       }
     ]
   }
