@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cửa hàng trực tuyến</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    .product button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Chào mừng đến với cửa hàng của chúng tôi!</h1>
+  <p>Chọn lựa sản phẩm yêu thích của bạn ngay hôm nay</p>
+</header>
+
+<section class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/250x180.png?text=San+Pham+1" alt="Sản phẩm 1" />
+    <h3>Sản phẩm 1</h3>
+    <p>₫100.000</p>
+    <button>Mua ngay</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/250x180.png?text=San+Pham+2" alt="Sản phẩm 2" />
+    <h3>Sản phẩm 2</h3>
+    <p>₫200.000</p>
+    <button>Mua ngay</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/250x180.png?text=San+Pham+3" alt="Sản phẩm 3" />
+    <h3>Sản phẩm 3</h3>
+    <p>₫150.000</p>
+    <button>Mua ngay</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Cửa hàng trực tuyến. Liên hệ: email@example.com</p>
+</footer>
+
+</body>
+</html>
