@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",         // hoặc "build", tuỳ thư mục bạn chứa file
+    "public": "public",       
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
