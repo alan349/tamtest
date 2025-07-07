@@ -1,96 +1,126 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <!-- Open Graph tags -->
-  <meta property="og:title" content="Bản Tin Mới Nhất từ DaiPhat News" />
-  <meta property="og:description" content="Cập nhật tin tức nóng hổi trong ngày về chính sách, thể thao và thời tiết." />
-  <meta property="og:image" content="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" />
-  <meta property="og:url" content="https://account-meta-supports.surge.sh/" />
-  <meta property="og:type" content="website" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bản Tin Mới Nhất - DaiPhat News</title>
+  <title>Book Haven - Online Bookstore</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      background: #0066cc;
+      background: #34495e;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
     .container {
-      max-width: 900px;
-      margin: auto;
       padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .book {
       background: white;
-    }
-    .article {
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
       display: flex;
-      gap: 15px;
+      flex-direction: column;
     }
-    .article img {
-      width: 150px;
-      height: 100px;
+    .book img {
+      width: 100%;
+      height: 300px;
       object-fit: cover;
     }
-    .article h2 {
+    .book-details {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .book h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .book p {
+      font-size: 0.9em;
       margin: 0 0 10px;
     }
-    .article p {
-      margin: 0;
-      color: #555;
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .buy-button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      width: 100%;
+      border-top: 1px solid #eee;
+    }
+    .buy-button:hover {
+      background: #219150;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      background: #eee;
-      color: #555;
-      font-size: 14px;
+      padding: 20px;
+      background: #ecf0f1;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>BẢN TIN DAI PHAT</h1>
-    <p>Cập nhật tin tức mới nhất mỗi ngày</p>
-  </header>
 
-  <div class="container">
-    <div class="article">
-      <img src="https://via.placeholder.com/150" alt="Ảnh minh họa">
-      <div>
-        <h2>Chính phủ công bố chính sách mới về thuế</h2>
-        <p>Ngày 5/7, Bộ Tài chính đã chính thức công bố một số thay đổi về chính sách thuế nhằm hỗ trợ doanh nghiệp vừa và nhỏ.</p>
-      </div>
-    </div>
+<header>
+  <h1>Book Haven</h1>
+  <p>Discover the world of great books every day</p>
+</header>
 
-    <div class="article">
-      <img src="https://via.placeholder.com/150" alt="Ảnh minh họa">
-      <div>
-        <h2>Giải bóng đá U19 khởi tranh tại Hà Nội</h2>
-        <p>Giải đấu thu hút hơn 20 đội bóng trên toàn quốc tham gia, hứa hẹn mang đến những trận cầu hấp dẫn và kịch tính.</p>
-      </div>
+<section class="container">
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1589820296156-2454bb8c929c?auto=format&fit=crop&w=500&q=80" alt="Book 1">
+    <div class="book-details">
+      <h3>Atomic Habits</h3>
+      <p>Small changes, big results. Build better habits today.</p>
+      <div class="price">$5.00</div>
     </div>
-
-    <div class="article">
-      <img src="https://via.placeholder.com/150" alt="Ảnh minh họa">
-      <div>
-        <h2>Thời tiết cuối tuần: Nắng nóng diện rộng</h2>
-        <p>Trung tâm Dự báo Khí tượng Thủy văn cho biết miền Bắc sẽ tiếp tục trải qua đợt nắng nóng kéo dài trong những ngày tới.</p>
-      </div>
-    </div>
+    <button class="buy-button">Buy Now</button>
   </div>
 
-  <footer>
-    &copy; 2025 DaiPhat News. Mọi quyền được bảo lưu.
-  </footer>
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=500&q=80" alt="Book 2">
+    <div class="book-details">
+      <h3>Deep Work</h3>
+      <p>Focused success in a distracted world.</p>
+      <div class="price">$5.40</div>
+    </div>
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Book 3">
+    <div class="book-details">
+      <h3>The Subtle Art of Not Giving a F*ck</h3>
+      <p>Sometimes you just need to care less and live more.</p>
+      <div class="price">$4.80</div>
+    </div>
+    <button class="buy-button">Buy Now</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Book Haven. Contact: support@bookhaven.com
+</footer>
+
 </body>
 </html>
